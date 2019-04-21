@@ -1,0 +1,20 @@
+When facing a repetitive task, we can achieve an optimal editing strategy by
+making both the motion and the change repeatable. 
+
+If we know how to repeat our actions without having to spell them out every
+single time, then we can be more efficient. First we act; then we repeat.
+
+The , key repeats the last f{char} search in the reverse direction.
+
+The following table summarizes Vim’s repeatable commands along with their corresponding
+reverse action:
+
+Intent	    			  ||  Act	       ||     Repeat||   Reverse
+********************************************************************************
+Make a change	 		  || {edit}	       ||       .   ||     u
+Scan line for next character 	  || f{char}/t{char}   ||       ;   ||     ,
+Scan line for previous character  || F{char}/T{char}   ||       ;   ||     ,
+Scan document for next match      || /pattern<CR>      ||       n   ||     N
+Scan document for previous match  || ?pattern<CR>      ||       n   ||     N
+
+
