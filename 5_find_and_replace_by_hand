@@ -1,0 +1,2 @@
+The * command executes a search for the word under the cursor at that moment.  
+We can advance to the next occurrence just by hitting the n key.
