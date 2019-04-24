@@ -1,0 +1,33 @@
+The d{motion} command can operate on a single character (dl), a complete
+word (daw), or an entire paragraph (dap). Its reach is defined by the motion.
+The same goes for c{motion}, y{motion}, and a handful of others.
+
+The combination of operators with motions forms a kind of grammar. The
+first rule is simple: an action is composed from an operator followed by a
+motion. Learning new motions and operators is like learning the vocabulary
+of Vim.
+
+Invoke gUaw to convert the current word to SHOUTY case. If we then expand
+our vocabulary to include the ap motion, which acts upon a paragraph, then
+we find two new operations at our disposal: dap to delete, or gUap to make the
+whole paragraph shout.
+
+Vim’s grammar has just one more rule: when an operator command is invoked
+in duplicate, it acts upon the current line. So dd deletes the current line, while
+>> indents it. The gU command is a special case. We can make it act upon
+the current line by running either gUgU or the shorthand gUU.
+
+Trigger || Effect
+*****************
+c       || Change
+d       || Delete
+y       || Yank into register
+g~      || Swap case
+gu      || Make lowercase
+gU      || Make uppercase
+>       || Shift right
+<       || Shift lef
+
+\\ap will toggle commenting for the current
+paragraph. \\G comments from the current line to the end of the file. \\\
+comments the current line.

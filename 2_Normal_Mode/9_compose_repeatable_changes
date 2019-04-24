@@ -1,0 +1,13 @@
+Vim is optimized for repetition. In order to exploit this, we have to be mindful
+of how we compose our changes.
+
+Pressing db deletes from the cursor’s starting position to the beginning of the
+word.
+
+The daw command is easily remembered by the mnemonic delete a word. This technique doesn’t
+just remove the word, it also deletes a whitespace character. 
+
+Making effective use of the dot command often requires some forethought. If
+you notice that you have to make the same small change in a handful of
+places, you can attempt to compose your changes in such a way that they
+can be repeated with the dot command.
