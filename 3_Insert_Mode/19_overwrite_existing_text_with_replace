@@ -1,0 +1,12 @@
+Replace mode is identical to Insert mode, except that it overwrites existing text
+in the document.
+
+From Normal mode, we can engage Replace mode with the R command. And when we’re finished with Replace mode, we can hit the <Esc> key to return
+to Normal mode.
+
+Vim has a second variant of Replace mode. Virtual Replace mode is triggered
+with gR and treats the tab character as though it consisted of spaces.
+
+Vim also provides a single-shot version of Replace mode and Virtual Replace
+mode. The r{char} and gr{char} commands allow us to overwrite a single
+character before switching straight back to Normal mode.
