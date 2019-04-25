@@ -13,4 +13,4 @@ In a typical text editing environment, selected text is deleted when we type any
 printable character. Vim’s Visual mode doesn’t follow this convention—but Select
 mode does. We can toggle between Visual and Select modes by pressing <C-g> . The only visible
 difference is the message at the bottom of screen, which switches between -- VISUAL --
-and -- SELECT --.
+and -- SELECT --
