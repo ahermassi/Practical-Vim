@@ -1,0 +1,7 @@
+It can sometimes be quicker to use an Ex command than to get the same job
+done with Vim’s Normal commands. For example, Normal commands tend
+to act on the current character or the current line, whereas an Ex command
+can be executed anywhere. This means that we can use Ex commands to
+make changes without having to move our cursor. But the greatest feature
+that distinguishes Ex commands is their ability to be executed across many
+lines at the same time.

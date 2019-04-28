@@ -1,0 +1,38 @@
+Many Ex commands can be given a [range] of lines to act upon. We can specify
+the start and end of a range with either a line number, a mark, or a pattern.
+
+:print command simply echoes the specified
+lines below Vim’s command line. This command doesn’t perform any useful
+work, but it helps to illustrate which lines make up a range.
+
+If we enter an Ex command consisting only of a number, then Vim will interpret that as an address and move our cursor to the specified line. We can
+jump to the top of the file by running the following: :1
+
+If we wanted to jump to the end of the file, we could use the special $ symbol: :$
+
+:p is the abbreviated form of :print. :3p prints the 3rd line.
+If we had issued the command :3d, then we would have jumped to line 3 and
+deleted it in a single move. The equivalent Normal mode commands would
+be 3G followed by dd.
+
+But we can also specify a range of lines: 
+:2,5p That prints each line from 2 to 5, inclusive. Note that after running this
+command, the cursor would be left positioned on line 5.
+
+We can use the . symbol as an address to represent the current line. So, we
+can easily compose a range representing everything from here to the end of
+the file: :.,$p 
+
+The % symbol also has a special meaning—it stands for all the lines in the
+current file: :%p  is equivalent to running :1,$p
+
+Instead of addressing a range of lines by number, we could just make a
+visual selection. If we ran the command 2G followed by VG, we would make a
+visual selection. If we press the : key now, the command-line prompt will be prepopulated
+with the range :'<,'>. It looks cryptic, but you can think of it simply as a range
+standing for the visual selection. Then we can specify our Ex command, and
+it will execute on every selected line.
+
+The general form for an offset goes like this: :{address}+n
+If n is omitted, it defaults to 1. 
+The . symbol stands for the current line, so :.,.+3 is equivalent to :2,5 if the cursor is positioned on line 2.
