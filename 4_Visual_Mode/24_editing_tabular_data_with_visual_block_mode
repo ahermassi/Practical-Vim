@@ -1,0 +1,9 @@
+We can work with rows of text in any editor, but manipulating columns of text
+requires a more specialized tool. Vim provides this capability in the form of its
+Visual-Block mode.
+
+We use <C-v> to engage Visual-Block mode; then we define the column
+selection by moving our cursor.
+
+We can reselect our last visual selection
+using the gv command.

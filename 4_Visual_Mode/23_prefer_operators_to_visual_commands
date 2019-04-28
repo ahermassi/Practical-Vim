@@ -1,0 +1,11 @@
+Visual mode may be more intuitive than Vim’s Normal mode of operation, but
+it has a weakness: it doesn’t always play well with the dot command. We can
+route around this weakness by using Normal mode operators when appropriate.
+
+When a Visual mode command is repeated, it
+affects the same range of text, i.e the same number of characters.
+
+If we want to set up the dot command so that it repeats something useful,
+then we’re better off staying out of Visual mode. As a general rule, we should 
+prefer operator commands over their Visual mode equivalents when working
+through a repetitive set of changes.

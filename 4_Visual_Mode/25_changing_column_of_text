@@ -1,0 +1,8 @@
+Vim has a couple of conventions for switching from Normal to Insert mode. The i
+and a commands both do it, positioning the cursor in front of or after the current
+character, respectively. The I and A commands behave similarly, except that they
+position the cursor at the start or end of the current line.
+
+Vim follows similar conventions for switching from Visual-Block to Insert mode. The
+I and A commands both do it, placing the cursor at the start or end of the selection,
+respectively.

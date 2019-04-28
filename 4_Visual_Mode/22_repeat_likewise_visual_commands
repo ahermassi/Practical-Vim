@@ -1,0 +1,9 @@
+When we use the dot command to repeat a change made to a visual selection,
+it repeats the change on the same range of text.
+
+When we execute a command from Visual mode, we are dropped back into
+Normal mode and the range of text that was marked out in Visual mode is
+unselected.
+
+When we use the dot command to repeat a Visual mode command, it acts on
+the same amount of text as was marked by the most recent visual selection.
