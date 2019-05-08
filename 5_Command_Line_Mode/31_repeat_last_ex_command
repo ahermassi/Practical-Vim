@@ -1,0 +1,5 @@
+While the . command can be used to repeat our most recent Normal mode
+command, we have to use @: instead if we want to repeat the last Ex command.
+
+After running @: for
+the first time, we can subsequently repeat it with the @@ command.

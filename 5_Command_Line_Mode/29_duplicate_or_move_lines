@@ -1,0 +1,21 @@
+The :copy command (and its shorthand :t) lets us duplicate one or more lines
+from one part of the document to another, while the :move command lets us
+place them somewhere else in the document.
+
+The format of the copy command goes like this: :[range]copy {address}
+
+So we can read the :6copy. command as
+“Make a copy of line 6 and put it below the current line.”
+
+Command	  		Effect
+************************************************************************ 
+:6t. 		Copy line 6 to just below the current line
+:t6 		Copy the current line to just below line 6
+:t. 		Duplicate the current line (similar to Normal mode yyp)
+:t$ 		Copy the current line to the end of the file
+:'<,'>t0 	Copy the visually selected lines to the start of the file
+
+When duplicating a distant line, the :t command is usually more efficient.
+
+The :move command looks similar to the :copy command. 
+We can shorten it to a single letter: :m
