@@ -1,0 +1,36 @@
+When a buffer has been modified, Vim gives it special treatment to ensure that
+we don’t accidentally quit the editor without saving our changes. 
+
+The buffer representing a modified file is annotated with a + sign, which indicates that
+it has been modified.
+
+If we try to change to another buffer without saving, Vim raises an error message, reporting that the current buffer contains
+unsaved changes.
+
+The bang symbol (:bnext!) forces Vim to switch buffers, even if our current buffer has
+unsaved changes. Previous buffer is marked with the letter h for hidden.
+
+We can open other buffers, change them, save them, and so on, all without consequences—that is, right 
+up until we attempt to close our editing session. That’s
+when Vim reminds us that we have unsaved changes in one of our buffers.
+
+If we want to keep the changes, we
+can run :write to save the buffer to a file. Or if we want to discard the changes,
+we can instead run :edit!, which rereads the file from disk, overwriting the
+contents of the buffer.
+
+If we want to quit Vim without reviewing our unsaved changes, we can issue
+the :qall! command. Or, if we want to write all modified buffers without
+reviewing them one by one, we can use the :wall command.
+
+If we enable the ‘hidden’ setting, then we can use the :next,
+:bnext, :cnext (and so on) commands without a trailing bang. If the active buffer
+is modified, Vim will automatically hide it when we navigate away from it.
+
+The ‘hidden’ setting makes it possible to use :argdo and :bufdo to change a collection 
+of buffers with a single command.
+
+:wall and :argdo write are equivalent.
+
+
+

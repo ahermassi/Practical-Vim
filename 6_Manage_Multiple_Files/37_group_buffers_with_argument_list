@@ -1,0 +1,35 @@
+The argument list represents the list of files that was passed as an argument
+when we ran the vim command.
+vim *.txt
+:args
+[a.txt] b.txt c.txt. d.txt e.txt
+The [] characters indicate which of the files in the
+argument list is active.
+
+ We can also set the contents of the argument list using
+this form :args {arglist}
+The {arglist} can include filenames, wildcards, or even the output from a shell
+command.
+
+➾ :args index.html app.js
+➾ :args
+❮ [index.html] app.js
+
+The ** wildcard also
+matches zero or more characters, but it can recurse downward into directories
+below the specified directory.
+We can combine these wildcards and use partial filenames or directories to
+form patterns, also known as globs, that match the set of files we’re interested
+in. 
+
+Just as we can use more than one filename in the {arglist}, we can also supply
+more than one glob.
+➾ :args **/*.js **/*.css
+
+➾ :args `cat chapters`
+Vim executes the text inside the backtick characters in the shell, using the
+output from the cat command as the argument for the :args command (chapters file)
+
+We can traverse the files in the argument list using
+:next and :prev commands. Or we can use :argdo to execute the same command
+on each buffer in the set.
