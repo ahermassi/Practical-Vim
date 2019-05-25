@@ -1,0 +1,28 @@
+We can load multiple files during an editing session. Vim lets us manage them
+using the buffer list.
+
+Files are stored on the disk, whereas buffers exist in memory. When we open
+a file in Vim, its contents are read into a buffer, which takes the same name
+as the file. Initially, the contents of the buffer will be identical to those of the
+file, but the two will diverge as we make changes to the buffer. If we decide
+that we want to keep our changes, we can write the contents of the buffer
+back into the file.
+
+The :ls command gives us a listing of all the buffers that have been loaded
+into memory. We can switch to the next buffer in the list by running
+the :bnext command.
+
+The % symbol indicates which of the buffers is visible in the current window,
+while the # symbol represents the alternate file.
+
+We can traverse the buffer list using four commands—:bprev and :bnext to move
+backward and forward one at a time, and :bfirst and :blast to jump to the start
+or end of the list.
+
+We can jump directly to a buffer by number, using the :buffer N
+command. Alternatively, we can use the more intuitive form, :buffer
+{bufname}
+
+If we want to delete a buffer, we can do so using the :bdelete command:
+:bdelete N1 N2 N3 --> delete buffers N1, N2, and N3
+:N,M bdelete --> delete buffers N through M
