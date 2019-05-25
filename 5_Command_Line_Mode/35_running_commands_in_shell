@@ -1,0 +1,17 @@
+From Vim’s Command-Line mode, we can invoke external programs in the
+shell by prefixing them with a bang symbol !
+
+Note the difference between :!ls and :ls—the former calls the ls command in
+the shell, whereas :ls calls Vim’s built-in command, which shows the contents
+of the buffer list.
+
+What if we want to run several commands in the shell? In that case, we can use Vim’s :shell
+command to start an interactive shell session.
+The exit command kills the shell and returns us to Vim.
+
+Pressing Ctrl -z suspends the process that’s running Vim and
+returns control to bash. The Vim process sits idle in the background, allowing us to
+interact with our bash session as normal.
+
+In bash, we can use the fg command to resume a suspended job, bringing it back
+into the foreground. That brings Vim back to life exactly as we left it.
