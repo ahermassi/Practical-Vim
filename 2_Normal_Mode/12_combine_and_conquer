@@ -7,14 +7,14 @@ first rule is simple: an action is composed from an operator followed by a
 motion. Learning new motions and operators is like learning the vocabulary
 of Vim.
 
-Invoke gUaw to convert the current word to SHOUTY case. If we then expand
-our vocabulary to include the ap motion, which acts upon a paragraph, then
-we find two new operations at our disposal: dap to delete, or gUap to make the
-whole paragraph shout.
+gUaw -> convert the current word to SHOUTY case. 
+dap -> delete paragraph
+gUap -> make the whole paragraph shout.
 
-Vim’s grammar has just one more rule: when an operator command is invoked
-in duplicate, it acts upon the current line. So dd deletes the current line, while
->> indents it. The gU command is a special case. We can make it act upon
+When an operator command is invoked in duplicate, it acts upon the current line.
+dd -> delete the current line
+>> indents the current line.
+gU command is a special case. We can make it act upon
 the current line by running either gUgU or the shorthand gUU.
 
 Trigger || Effect
@@ -28,6 +28,6 @@ gU      || Make uppercase
 >       || Shift right
 <       || Shift lef
 
-\\ap will toggle commenting for the current
-paragraph. \\G comments from the current line to the end of the file. \\\
-comments the current line.
+\\ap -> toggle commenting for the current paragraph.
+\\G -> comment from the current line to the end of the file. 
+\\\ comments the current line.
