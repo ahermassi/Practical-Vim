@@ -1,9 +1,8 @@
-The s command compounds two steps into one: it deletes the character under
-the cursor and then enters Insert mode.
+s command -> delete the character under the cursor and then enter Insert mode.
 
-The f{char} command tells Vim to look
-ahead for the next occurrence of the specified character and then move the
-cursor directly to it if a match is found. So when we type f+, our
-cursor goes straight to the next + symbol.
+f{char} command -> look ahead for the next occurrence of the specified character 
+and then move the cursor directly to it if a match is found. 
 
-The ; command will repeat the last search that the f command performed.
+f+ -> cursor goes straight to the next + symbol.
+
+; command -> repeat the last search that the f command performed.

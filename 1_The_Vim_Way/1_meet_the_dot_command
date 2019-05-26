@@ -7,4 +7,5 @@ The “last change” could be one of many things. A change could act at the lev
 individual characters, entire lines, or even the whole file.
 
 From the moment we enter Insert mode (by pressing i, for example) until we return to Normal mode
-(by pressing <Esc>), Vim records every keystroke. After making a change such as this, the dot command will replay our keystrokes.
+(by pressing <Esc>), Vim records every keystroke. After making a change such as this, the dot 
+command will replay our keystrokes.
