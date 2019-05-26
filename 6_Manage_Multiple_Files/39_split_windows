@@ -1,0 +1,24 @@
+In Vim’s terminology, a window is a viewport onto a buffer. 
+We can open multiple windows, each containing the same buffer, or we can load
+different buffers into each window.
+
+<C-w>s --> divide horizontally
+<C-w>v --> divide vertically
+The two resulting split windows will contain the same buffer as the original window
+
+:sp {file} --> Split the current window horizontally, loading {file} into the new
+window
+
+:vsp {file} --> Split the current window vertically, loading {file} into the new
+window
+
+<C-w>w  --> Cycle between open windows
+<C-w>h  --> Focus the window to the left
+<C-w>j  --> Focus the window below
+<C-w>k  --> Focus the window above
+<C-w>l  --> Focus the window to the right
+
+:cl[ose] --> Close the active window
+:on[ly] --> Keep only the active window, closing all others
+
+<C-w>= --> Equalize width and height of all windows

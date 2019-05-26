@@ -1,0 +1,19 @@
+Suppose that we’re at work on a project, with our workspace divided into a
+few split windows. Out of the blue, something urgent comes up and we have
+to switch contexts. Rather than opening new files in our current tab page,
+which would mess up our carefully assembled workspace, we can create a
+new tab page and do the work there. When we’re ready to resume our previous
+work, we just have to switch back to the original tab page where all of our
+windows will have been preserved as we left them.
+
+:tabe 01 - Open the 01 markdown file in a new tab
+
+<C-w>T - move the current window into its own tab
+
+:tabc - close the current tab
+
+:tabo - keep the active tab page, close all tabs
+
+gt - move to next tab; equivalent to :tabn
+gT - move to previous tab; equivalent to :tabp
+{N}gt - move to tab N; equivalent to :tabn N
