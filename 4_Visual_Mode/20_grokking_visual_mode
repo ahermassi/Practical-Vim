@@ -1,16 +1,7 @@
-Some Visual mode commands perform the same basic function as in Normal
-mode but with a slight twist. For example, the c command is consistent in
-both modes in that it deletes the specified text and then switches to Insert
-mode.
+In Visual mode, we start off by making the selection and then trigger the change command.
 
-From Normal mode, we trigger the change command first and then specify the range
-as a motion. Whereas in Visual mode, we start off by making the
-selection and then trigger the change command.
-
-Run viw to visually select the word.
+viw -> visually select the word.
 
 In a typical text editing environment, selected text is deleted when we type any
 printable character. Vim’s Visual mode doesn’t follow this convention—but Select
-mode does. We can toggle between Visual and Select modes by pressing <C-g> . The only visible
-difference is the message at the bottom of screen, which switches between -- VISUAL --
-and -- SELECT --
+mode does. We can toggle between Visual and Select modes by pressing <C-g> . 

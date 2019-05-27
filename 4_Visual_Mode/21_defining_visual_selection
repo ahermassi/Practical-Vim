@@ -1,15 +1,8 @@
-The v key is our gateway into Visual mode. From Normal mode, we can press
-v by itself to enable character-wise Visual mode. Line-wise Visual mode is
-enabled by pressing V , and block-wise Visual mode by pressing <C-v>.
+v -> enable character-wise Visual mode
+V -> enable line-wise Visual mode 
+<C-v> -> enable block-wise Visual mode 
 
-The gv command is a useful little shortcut. It reselects the range of text that
-was last selected in Visual mode.
-
-If we’re in character-wise Visual
-mode, we can switch to the line-wise variant by pressing V, or to block-wise
-Visual mode with <C-v>. But if we were to press v from character-wise Visual
-mode, it would switch us back into Normal mode. So you can think of the v
-key as a toggle between Normal mode and character-wise Visual mode.
+gv -> reselect the range of text that was last selected in Visual mode.
 
 The range of a Visual mode selection is marked by two ends: one end is fixed
 and the other moves freely with our cursor. We can use the o key to toggle
