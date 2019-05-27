@@ -1,24 +1,12 @@
-Vim records the commands that we enter in Command-Line mode and provides
-two ways of recalling them: scrolling through past command-lines with the
-cursor keys or dialing up the command-line window.
+Typing :help followed by the <Up> key brings up Ex commands that started 
+with the word “help.”
 
-To begin with, let’s switch to Command-Line mode by pressing the : key.
-Leave the prompt empty; then press the <Up> arrow key. The command line
-should be populated with the most recent Ex command that we executed. 
+Press / to bring up the search prompt, scroll backward and forward through 
+previous searches with the <Up> and <Down> keys. 
 
-Now try typing :help, followed by the <Up> key. Again, this should scroll through
-previous Ex commands, but instead of showing everything, the list will be
-filtered to only include Ex commands that started with the word “help.”
+q: -> command-line window: Ex mode history
 
-Vim keeps a separate record of our search history. If we press / to bring up the search prompt, we can
-also scroll backward and forward through previous searches with the <Up>
-and <Down> keys. 
-
-Press q: and meet the command-line window. 
-The command-line window is like a regular Vim buffer, where each line contains an item from our history.
-We can navigate with any of the motions we’re accustomed to using in Normal mode.
-
-We can close the command-line window by running the :q command.
+:q -> close the command-line window 
 
 Command 	Action
 ****************************** ******************************

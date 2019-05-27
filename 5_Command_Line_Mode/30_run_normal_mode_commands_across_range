@@ -1,16 +1,9 @@
-If we want to run a Normal mode command on a series of consecutive lines,
-we can do so using the :normal command.
+:normal -> run a Normal mode command on a series of consecutive lines
 
-The :'<,'>normal . command can be read as follows: “For each line in the visual
-selection, execute the Normal mode . command.
+:'<,'>normal . -> For each line in the visual selection, execute the Normal mode . command
 
-:%normal A; The % symbol is used as a range representing the entire file. So :%normal A;
-instructs Vim to append a semicolon at the end of every line of the file.
+:%normal A; -> append a semicolon at the end of every line of the file
 
 Before executing the specified Normal mode command on each line, Vim
 moves the cursor to the beginning of the line. So we don’t have to worry about
 where the cursor is positioned when we execute the command.
-
-The :normal command allows us to combine
-the expressive nature of Vim’s Normal mode commands with the range of Ex
-commands. It’s a powerful combination!

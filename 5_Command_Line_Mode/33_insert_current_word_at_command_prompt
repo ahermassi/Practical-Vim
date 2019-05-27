@@ -1,9 +1,7 @@
 At Vim’s command line, the <C-r><C-w> mapping copies the word under the
-cursor and inserts it at the command-line prompt. We can use this to save
-ourselves a bit of typing.
+cursor and inserts it at the command-line prompt.
 
-While <C-r><C-w> gets the word under the cursor, we can instead use <C-r><C-a>
-if we want to get the WORD.
+Use <C-r><C-a> to get the WORD.
 
 For another application, try opening your vimrc file, place your cursor on a
 setting, and then type :help <C-r><C-w> to look up the documentation for that
