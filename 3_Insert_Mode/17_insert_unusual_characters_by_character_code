@@ -1,13 +1,8 @@
-Vim can insert any character by its numeric code. This can be handy for
-entering symbols that are not found on the keyboard.
+<C-v>{code}, where {code} is the address of the character that we want to insert.
 
-We can tell Vim to insert any arbitrary character if we know its numeric code.
-From Insert mode, we just have to type <C-v>{code}, where {code} is the address
-of the character that we want to insert.
-
-Vim expects the numeric code to consist of three digits. Suppose, for example,
-that we wanted to insert an uppercase “A” character. The character code is
-65, so we would have to enter it as <C-v>065.
+Vim expects the numeric code to consist of three digits. 
+To insert an uppercase “A” character, the character code is 65, so we would have 
+to enter it as <C-v>065.
 
 If you want to find out the numeric code for any character in your document,
 just place the cursor on it and trigger the ga command.
@@ -17,4 +12,3 @@ Keystrokes 	     	Effect
 <C-v>{123} 		Insert character by decimal code
 <C-v>u{1234} 		Insert character by hexadecimal code
 <C-v>{nondigit} 	Insert nondigit literally
-<C-k>{char1}{char2} 	Insert character represented by {char1}{char2} digraph

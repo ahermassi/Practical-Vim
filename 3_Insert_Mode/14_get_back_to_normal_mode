@@ -1,7 +1,4 @@
-When we’re in Insert mode and we want
-to run only one Normal command and then continue where we left off in Insert
-mode. Vim has a neat solution to ease the friction caused by switching modes:
-Insert Normal mode.
+Insert Normal mode: run only one Normal command and then continue 
+where we left off in Insert mode. 
 
-From Insert mode, we can switch to Insert Normal
-mode by pressing <C-o>
+From Insert mode, we can switch to Insert Normal mode by pressing <C-o>

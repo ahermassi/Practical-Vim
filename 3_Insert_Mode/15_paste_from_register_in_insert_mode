@@ -1,8 +1,6 @@
-In Insert mode, we can press
-<C-r>0 to paste the text that we just yanked at the current cursor position.
+<C-r>0 -> paste the yanked text at the current cursor position in Insert Mode.
 
 The general format of the command is <C-r>{register}, where {register} is the
 address of the register we want to insert.
 
-The <C-r><C-p>{register} command is smarter. It inserts text literally and fixes
-any unintended indentation.
+<C-r><C-p>{register} -> insert text literally and fixe any unintended indentation.

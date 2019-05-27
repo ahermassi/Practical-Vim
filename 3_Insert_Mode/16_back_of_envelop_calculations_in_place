@@ -1,11 +1,9 @@
-The delete and yank commands allow us to set the contents of
-a register, while the put command allows us to get the contents of a register
-by inserting it into the document.
+delete and yank commands -> set the contents of a register.
+put command -> get the contents of a register by inserting it into the document.
 
 The expression register is different. It can evaluate a piece of Vim script code
 and return the result.
 
-The expression register is addressed by the = symbol. From Insert mode we
-can access it by typing <C-r>=. This opens a prompt at the bottom of the screen
+<C-r>= -> access the expression register. This opens a prompt at the bottom of the screen
 where we can type the expression that we want to evaluate. When done, we
 hit <CR>, and Vim inserts the result at our current position in the document.
